@@ -1,0 +1,18 @@
+ 
+DECLARE
+    ANIMAL_TYPE_ID_         ANIMAL_TYPES.ANIMAL_TYPE_ID%TYPE;
+    ANIMAL_TYPE_            ANIMAL_TYPES.ANIMAL_TYPE%TYPE;
+
+BEGIN
+    ANIMAL_TYPE_ := 'TYPE';
+ 
+    FOR i IN 1..15 LOOP
+        INSERT INTO ANIMAL_TYPES (
+            ANIMAL_TYPE_ID,
+            ANIMAL_TYPE
+        ) VALUES(i, TRIM(ANIMAL_TYPE_)||i);
+ 
+    END LOOP;
+ 
+END;
+
