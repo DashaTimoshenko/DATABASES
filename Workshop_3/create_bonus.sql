@@ -5,4 +5,31 @@
 
 
 
+Insert into COUNTRIES (COUNTRY_CODE,COUNTRY) values ('FRA','France');
+Insert into COUNTRIES (COUNTRY_CODE,COUNTRY) values ('POL','Poland');
+Insert into COUNTRIES (COUNTRY_CODE,COUNTRY) values ('USA','USA');
+Insert into COUNTRIES (COUNTRY_CODE,COUNTRY) values ('UKR','Ukraine');
 
+Insert into CITY (CITY_ID,CITY,COUNTRY_CODE) values ('5','Fizhak','FRA');
+Insert into CITY (CITY_ID,CITY,COUNTRY_CODE) values ('2','Krakow','POL');
+Insert into CITY (CITY_ID,CITY,COUNTRY_CODE) values ('4','Kyev','UKR');
+Insert into CITY (CITY_ID,CITY,COUNTRY_CODE) values ('1','Lviv','UKR');
+Insert into CITY (CITY_ID,CITY,COUNTRY_CODE) values ('3','New york','USA');
+
+Insert into STREET (STREET_ID,STREET,CITY_ID) values ('1','Antonovicha Street','1');
+Insert into STREET (STREET_ID,STREET,CITY_ID) values ('5','Bayard Street','5');
+Insert into STREET (STREET_ID,STREET,CITY_ID) values ('3','Beaver Street','3');
+Insert into STREET (STREET_ID,STREET,CITY_ID) values ('2','Kalwaryjska Street','2');
+Insert into STREET (STREET_ID,STREET,CITY_ID) values ('4','Libidan Street','4');
+
+Insert into SHELTER_ADDRESS (SHELTER_ADDRESS_ID,BUILD_NUM,STREET_ID) values ('11','105','1');
+Insert into SHELTER_ADDRESS (SHELTER_ADDRESS_ID,BUILD_NUM,STREET_ID) values ('22','16','2');
+Insert into SHELTER_ADDRESS (SHELTER_ADDRESS_ID,BUILD_NUM,STREET_ID) values ('55','201','5');
+Insert into SHELTER_ADDRESS (SHELTER_ADDRESS_ID,BUILD_NUM,STREET_ID) values ('44','398','4');
+Insert into SHELTER_ADDRESS (SHELTER_ADDRESS_ID,BUILD_NUM,STREET_ID) values ('33','89','3');
+
+Insert into SHELTERS (SHELTER_ID,SHELTER_TITLE,SHELTER_ADDRESS_ID) values ('100','Republic friend','11');
+Insert into SHELTERS (SHELTER_ID,SHELTER_TITLE,SHELTER_ADDRESS_ID) values ('101','Happy pets','22');
+Insert into SHELTERS (SHELTER_ID,SHELTER_TITLE,SHELTER_ADDRESS_ID) values ('102','In good hands','33');
+Insert into SHELTERS (SHELTER_ID,SHELTER_TITLE,SHELTER_ADDRESS_ID) values ('103','Friend','44');
+Insert into SHELTERS (SHELTER_ID,SHELTER_TITLE,SHELTER_ADDRESS_ID) values ('104','Bim','55');
