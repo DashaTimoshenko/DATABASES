@@ -16,6 +16,6 @@ INSERT INTO animals (
 ) VALUES (
     'A7122222211',
     'Cat',
-    'Мейн кун',
+    'Maine Coon',
     NULL
 );
