@@ -44,7 +44,7 @@ BEGIN
 
 EXCEPTION
     WHEN no_animal_or_shelter THEN
-        raise_application_error(-20001, 'Тваринку чи притулок не знайдено.');
+        raise_application_error(-20001, 'No animal or shelter found.');
     WHEN OTHERS THEN
-        raise_application_error(-20002, 'Помилка при доданні тваринки.');
+        raise_application_error(-20002, 'Error adding animal.');
 END;
